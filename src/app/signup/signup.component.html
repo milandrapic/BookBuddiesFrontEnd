@@ -1,0 +1,22 @@
+<div class="wrapper">
+
+    <a routerLink="/login" class="loginLink">Already a user? Sign in here!</a> <br>
+
+    <h3>Sign up for Account</h3>
+
+    <div class="signup">
+    <form (ngSubmit) = "onSubmit()" #f = "ngForm" >
+        <div class="inputField"><label for="email" class="label">Email: </label> <input type="text" ngModel name="email" required email></div><br>
+        <div class="inputField"><label for="username" class="label">Username: </label> <input type="text" ngModel name="username" required></div><br>
+        <div class="inputField"><label for="password" class="label">Password: </label> <input type="password" ngModel name="password" required> </div><br>
+        <div class="inputField"><label for="password" class="label">Confirm Password: </label> <input type="password" ngModel name="confirmed_password" required></div> <br>
+        <button
+         [disabled] ="!f.valid"
+         type="submit"
+        class="logInButton" 
+        >Sign up</button>
+
+    </form>
+
+    </div>
+</div>

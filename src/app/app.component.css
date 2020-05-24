@@ -1,0 +1,42 @@
+.titleBar{
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid black;
+    padding-bottom: 2%;
+    font-family: Palantino, 'Times New Roman', Times, serif;
+}
+
+.navBar{
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid black;
+    border-top: transparent;
+    padding-bottom: 2%;
+    font-family: Palantino, 'Times New Roman', Times, serif;
+    width: 20%;
+    position: fixed;
+    left: 0;
+    height: 100%;
+}
+.link{
+    color: blanchedalmond;
+    font-size: 15pt;
+    color: blueviolet;
+    background-color: cornsilk;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20%;
+    border: 2px solid black;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.logged{
+    position: fixed;
+    left:25%;
+    text-align: center;
+    margin-top: 3%;
+}

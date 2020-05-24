@@ -1,0 +1,23 @@
+<div class="wrapper">
+
+    <a routerLink="/signup" class="signupLink">Not a user? Sign up here!</a> <br>
+
+<div class="welcome" *ngIf="justSignedUp"><p>Congratulations you have successfully signed up! Login below</p></div>
+
+    <h3>Login To Account</h3>
+
+    <div class="login">
+    <form (ngSubmit) = "onSubmit()" #f = "ngForm" >
+        <div class="inputDiv"><label for="username">Username: </label> <input type="text" ngModel name="username" required></div><br>
+        <div class="inputDiv"><label for="password">Password: </label> <input type="password" ngModel name="password" required></div> <br><br>
+   <div class="errorDiv"> <p class="error" *ngIf="this.service.authError">Invalid Credentials</p></div>
+
+        <button [disabled]="!f.valid"
+         type="submit"
+        class="logInButton" 
+        >Log in</button>
+
+    </form>
+
+    </div>
+</div>

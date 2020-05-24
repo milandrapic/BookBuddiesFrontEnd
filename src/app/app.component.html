@@ -1,0 +1,14 @@
+<div class="titleBar">
+  <h1>Book Buddies</h1>
+</div>
+<nav class="navBar" *ngIf="this.userService.isLogged">
+<ul class="list-unstyled components">
+  <li class="link"><a>Profile</a></li>
+  <li class="link"><a>Feed</a></li>
+  <li class="link"><a>Explore</a></li>
+  <li class="link"><a>Help</a></li>
+</ul>
+</nav>
+<div [ngClass]="{logged: this.userService.isLogged}">
+<router-outlet></router-outlet>
+</div>
