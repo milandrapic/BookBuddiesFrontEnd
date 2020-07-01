@@ -16,7 +16,7 @@ export class AuthService{
     logIn(user:User){
         console.log(user);
         let u:User = null;
-         this.http.post('http://localhost:8080/getUser', user).subscribe(
+         this.http.post('http://localhost:8080/api/getUser', user).subscribe(
             (data:{username:string, email:string, password:string}) => {
                 console.log(data);
                     if(data != null){
@@ -38,7 +38,7 @@ export class AuthService{
 
         console.log(user);
         
-    this.http.post('http://localhost:8080/create', user).subscribe(
+    this.http.post('http://localhost:8080/api/create', user).subscribe(
                 (data) => {
                     console.log(data);
                 }
